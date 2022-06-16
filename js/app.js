@@ -10,22 +10,22 @@ window.onscroll = function () {
       document.querySelector("header").classList.remove("fixed");
     }
   }
-}
+};
 
 //navbar links
 
 const navbar = document.querySelector(".navbar");
-a = navbar.querySelectorAll("a")
+a = navbar.querySelectorAll("a");
 
 a.forEach(function (element) {
   element.addEventListener("click", function () {
     for (let i = 0; i < a.length; i++) {
-      a[i].classList.remove("active")
+      a[i].classList.remove("active");
     }
     this.classList.add("active");
     document.querySelector(".navbar").classList.toggle("show");
-  })
-})
+  });
+});
 
 //Hamburger
 
@@ -33,7 +33,7 @@ const hamBurger = document.querySelector(".hamburger");
 
 hamBurger.addEventListener("click", function () {
   document.querySelector(".navbar").classList.toggle("show");
-})
+});
 
 //Portfolio Gallery
 
@@ -97,7 +97,8 @@ const margin = 30;
 let itemPerSlide = 0;
 let sliderDot;
 
-const responsive = [{
+const responsive = [
+  {
     breakPoint: {
       width: 0,
       item: 1,
@@ -147,7 +148,7 @@ let autoSlide = 0;
 
 function controlSlide(element) {
   clearInterval(timer);
-  timer = setInterval(autoPlay, 5000);
+  timer = setInterval(autoPlay, 13000);
   autoSlide = element.id;
   currentSlide = element.id;
   changeSlide(currentSlide);
@@ -171,11 +172,10 @@ function autoPlay() {
   }
   changeSlide(autoSlide);
 }
-let timer = setInterval(autoPlay, 5000);
+let timer = setInterval(autoPlay, 13000);
 
 window.onload = load();
 
-
-//Footer Year 
+//Footer Year
 var year = document.getElementById("year");
 year.innerHTML = new Date().getFullYear();

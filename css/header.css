@@ -8,7 +8,9 @@ header {
 }
 
 .fixed {
-  background-color: rgb(236, 241, 250);
+  background-image: url("../img/plant.jpg");
+  background-size: cover;
+  background-position: center;
   position: fixed;
   border-color: #eee;
   animation: fixHeader 1s ease;
@@ -40,11 +42,11 @@ header .row {
   font-weight: 500;
   color: rgb(236, 241, 250);
   position: relative;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 .fixed .brand-name a {
-  color: #000;
+  color: #fff;
 }
 
 .hamburger .fa {
@@ -82,7 +84,7 @@ header .row {
 }
 
 .fixed .navbar ul li a {
-  color: #000;
+  color: #fff;
 }
 
 .navbar ul li a::before {
