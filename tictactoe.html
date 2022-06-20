@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
+    <link href="./css/contact.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="brand-name">
+            <a href="img/Whitten_Oswald_.pdf" class="fa-light"
+              ><i class="fas fa-file-pdf-o"></i> Resumé
+            </a>
+          </div>
+          <div class="hamburger">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="#tictactoe">Tic Tac Toe</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row full-screen">
+          <div class="home-content">
+            <div class="block">
+              <h1> <span><i class="fas fa-wrench"></i></span> Construction Area <span><i class="fas fa-wrench"></i></span> </h1>
+              <p>Thank you for your patience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tictactoe" id="tictactoe">
+      <div class="container">
+      <div class="row">
+         <div class="title text-center">
+            <h1>Tic Tac Toe</h1>
+            <p>Play against the computer.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="tictac-game">
+            <div class="row">
+               <div class="img">
+                <table>
+                  <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                  </tr>
+                  <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                  </tr>
+                  <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                  </tr>
+                </table>
+                <div class="endgame">
+                  <div class="text">
+                  </div>
+                </div>
+                <div class="selectSym">
+                  <p>Choose:</p>
+                  <button onClick="selectSym('X')">X</button>
+                  <button onClick="selectSym('O')">O</button>
+                </div>
+                <button class="btn" onClick="startGame()">Play Again</button>
+                
+                <script src="./js/script.js"></script>
+               </div>
+               <div class="info">
+                <p>The computer algorithm you play against here is based on the Mini</p>
+              </div>
+               <!-- <div class="text">
+                  <div class="social">
+                     <a href="https://www.youtube.com/channel/UCK3bLIMxwYbCrhLdSqwk1fg"><i class="fa fa-youtube"></i></a>
+                     <a href="https://github.com/guswhitten/"><i class="fa fa-github"></i></a>
+                     <a href="https://www.linkedin.com/in/whitten-oswald-041077145/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="contact" id="contact">
+    <div class="container">
+       <div class="row">
+          <div class="title text-center">
+             <h1>Contact</h1>
+          </div>
+       </div>
+       <div class="row">
+          <div class="contact-form">
+             <div class="row">
+                <div class="contact-text">
+                   <h2>Question, comment, criticism?</h2>
+                   <p>Lay it on me.</p>
+                </div>
+             </div>
+             <div class="row space-between">
+                <div class="col-6">
+                   <input type="text" class="form-control" name="" placeholder="Name" />
+                </div>
+                <div class="col-6">
+                   <input type="text" class="form-control" name="" placeholder="Email" />
+                </div>
+             </div>
+             <div class="row">
+                <div class="col-12">
+                   <textarea class="form-control" placeholder="Your Message"></textarea>
+                </div>
+             </div>
+             <div class="row">
+                <div class="button btn">
+                   <a href="#">Send</a>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <footer>
+    <div class="container">
+       <div class="row">
+          <div class="footer-logo">Whitten Oswald</div>
+          <div class="social-link">
+             <a href="https://www.youtube.com/channel/UCK3bLIMxwYbCrhLdSqwk1fg"><i class="fa fa-youtube"></i></a>
+             <a href="https://github.com/guswhitten/"><i class="fa fa-github"></i></a>
+             <a href="https://www.linkedin.com/in/whitten-oswald-041077145/"><i class="fa fa-linkedin"></i></a>
+          </div>
+       </div>
+    </div>
+ </footer>
+ <section class="copyright">
+    <div class="container">
+       <p>© <span id="year"></span> | Whitten Oswald | All rights reserved.</p>
+    </div>
+ </section>
+    
+  </body>
+</html>
