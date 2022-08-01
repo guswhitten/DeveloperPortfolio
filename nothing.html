@@ -1,0 +1,113 @@
+<!-- CHESS SECTION
+
+   <section class="chess" id="chess">
+      <div class="container">
+      <div class="row">
+         <div class="title text-center">
+            <h1>Chess</h1>
+            <p style="color: black">(still in development)</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="chess-game">
+            <div class="row">
+               <div class="img">
+                <table class="chessBoard">
+                  <tr>
+                    <td class="cell1" id="00"><i class="fas fa-chess-rook"></i></td>
+                    <td class="cell1" id="01"><i class="fas fa-chess-knight"></i></td>
+                    <td class="cell1" id="02"><i class="fas fa-chess-bishop"></i></td>
+                    <td class="cell1" id="03"><i class="fas fa-chess-queen"></i></td>
+                    <td class="cell1" id="04"><i class="fas fa-chess-king"></i></td>
+                    <td class="cell1" id="05"><i class="fas fa-chess-bishop"></i></td>
+                    <td class="cell1" id="06"><i class="fas fa-chess-knight"></i></td>
+                    <td class="cell1" id="07"><i class="fas fa-chess-rook"></i></td>
+                  </tr>
+                  <tr>
+                     <td class="cell1" id="08" ><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="9"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="10"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="11"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="12"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="13"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="14"><i class="fas fa-chess-pawn"></i></td>
+                     <td class="cell1" id="15"><i class="fas fa-chess-pawn"></i></td>
+                  </tr>
+                  <tr>
+                     <td class="cell1" id="16"></td>
+                     <td class="cell1" id="17"></td>
+                     <td class="cell1" id="18"></td>
+                     <td class="cell1" id="19"></td>
+                     <td class="cell1" id="20"></td>
+                     <td class="cell1" id="21"></td>
+                     <td class="cell1" id="22"></td>
+                     <td class="cell1" id="23"></td>
+                  </tr>
+                  <tr>
+                     <td class="cell1" id="24"></td>
+                     <td class="cell1" id="25"></td>
+                     <td class="cell1" id="26"></td>
+                     <td class="cell1" id="27"></td>
+                     <td class="cell1" id="28"></td>
+                     <td class="cell1" id="29"></td>
+                     <td class="cell1" id="30"></td>
+                     <td class="cell1" id="31"></td>
+                   </tr>
+                   <tr>
+                      <td class="cell1" id="32"></td>
+                      <td class="cell1" id="33"></td>
+                      <td class="cell1" id="34"></td>
+                      <td class="cell1" id="35"></td>
+                      <td class="cell1" id="36"></td>
+                      <td class="cell1" id="37"></td>
+                      <td class="cell1" id="38"></td>
+                      <td class="cell1" id="39"></td>
+                   </tr>
+                   <tr>
+                      <td class="cell1" id="40"></td>
+                      <td class="cell1" id="41"></td>
+                      <td class="cell1" id="42"></td>
+                      <td class="cell1" id="43"></td>
+                      <td class="cell1" id="44"></td>
+                      <td class="cell1" id="45"></td>
+                      <td class="cell1" id="46"></td>
+                      <td class="cell1" id="47"></td>
+                   </tr>
+                   <tr>
+                     <td class="cell1" id="48" ><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="49"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="50"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="51"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="52"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="53"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="54"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                     <td class="cell1" id="55"><i class="fas fa-chess-pawn" style="color:azure"></i></td>
+                   </tr>
+                   <tr>
+                      <td class="cell1" id="56"><i class="fas fa-chess-rook" style="color:azure"></i></td>
+                      <td class="cell1" id="57"><i class="fas fa-chess-knight" style="color:azure"></i></td>
+                      <td class="cell1" id="58"><i class="fas fa-chess-bishop" style="color:azure"></i></td>
+                      <td class="cell1" id="59"><i class="fas fa-chess-queen" style="color:azure"></i></td>
+                      <td class="cell1" id="60"><i class="fas fa-chess-king" style="color:azure"></i></td>
+                      <td class="cell1" id="61"><i class="fas fa-chess-bishop" style="color:azure"></i></td>
+                      <td class="cell1" id="62"><i class="fas fa-chess-knight" style="color:azure"></i></td>
+                      <td class="cell1" id="63"><i class="fas fa-chess-rook" style="color: azure"></i></td>
+                   </tr>
+                </table>
+                <div class="endOfgame">
+                  <div class="text">
+                  </div>
+                </div>
+                <div class="selectPiece">
+                  <p>Choose:</p>
+                  <button onClick="selectPiece('W')"><i class="fas fa-chess-king" style="color:azure"></i></button>
+                  <button onClick="selectPiece('B')"><i class="fas fa-chess-king"></i></button>
+                </div>
+                <button class="restartGame" onClick="setup()">Play Again</button>
+                
+                <script src="./js/chess.js"></script>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section> -->

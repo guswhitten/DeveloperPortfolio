@@ -1,0 +1,33 @@
+.rps-game {
+  margin: auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.rps .row .title h1::before {
+  left: 30%;
+}
+
+.rps .row .title {
+  padding: 60px;
+}
+
+.rpsButtons {
+  background-color: aquamarine;
+  color: black;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-block-start: 30px;
+}
+
+.rps-game h2 {
+  position: absolute;
+  left: 50px;
+}
+
+.gameResults {
+  margin: 40px;
+}

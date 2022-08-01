@@ -7,13 +7,14 @@
       <meta name="description"
          content="My software developer portfolio using Html, CSS, and JavaScript">
       <meta name="author" content="Whitten Oswald">
-      <title>Whitten Oswald | Software Engineer</title>
+      <link rel="icon" type="image/png" href="img/tree.png">
+      <title>Whitten Oswald | Home</title>
       <link href="./css/header.css" rel="stylesheet" />
       <link href="./css/main.css" rel="stylesheet" />
       <link href="./css/home.css" rel="stylesheet" />
       <link href="./css/about.css" rel="stylesheet" />
-      <link href="./css/service.css" rel="stylesheet" />
       <link href="./css/portfolio.css" rel="stylesheet" />
+      <link href="./css/service.css" rel="stylesheet" />
       <link href="./css/testimonials.css" rel="stylesheet" />
       <link href="./css/testimonials.css" rel="stylesheet" />
       <link href="./css/blog.css" rel="stylesheet" />
@@ -26,40 +27,42 @@
          <div class="container">
             <div class="row">
                <div class="brand-name">
-                  <a href="img/Whitten_Oswald_.pdf" class="fa-light"><i class="fas fa-file-pdf-o"></i>  Resumé </a>
+                  <a href="img/Whitten_Oswald_856_739_6005_.pdf" target="_blank" class="fa-light"><i class="fas fa-file-pdf-o"></i>  Resumé </a>
                </div>
                <div class="hamburger">
                   <i class="fa fa-bars"></i>
                </div>
                <div class="navbar">
                   <ul>
-                     <li><a href="#about">About Me</a></li>
-                     <li><a href="#services">Skills</a></li>
-                     <li><a href="#portfolio">Projects</a></li>
-                     <li><a href="#blog">Just For Fun</a></li>
+                     <li><a href="index.html" class="active">Home</a></li>
+                     <li><a href="projects.html">Projects</a></li>
+                     <li><a href="arcade.html">Arcade</a></li>
                      <li><a href="#contact">Contact</a></li>
-                     <li><a href="tictactoe.html">Extras</a></li>
+                     
                   </ul>
                </div>
             </div>
          </div>
       </header>
+
+ <!-- HOME SECTION -->
+
       <section class="home" id="home">
          <div class="container">
             <div class="row full-screen">
                <div class="home-content">
-                  <div class="block">
+                  <div class="blocky">
                      <h6>Hi, my name is</h6>
                      <h1>Whitten Oswald</h1>
                      <p>Welcome to my website.</p>
-                     <!-- <div class="cv-btn">
-                        <a href="img/Whitten_Oswald.pdf" class="fa fa-file-pdf-o">  Resumé</a>
-                     </div> -->
                   </div>
                </div>
             </div>
          </div>
       </section>
+
+ <!-- ABOUT ME SECTION -->
+
       <section class="about" id="about">
          <div class="container">
          <div class="row">
@@ -125,135 +128,9 @@
             </div>
          </div>
       </section>
-      <section class="services" id="services">
-         <div class="container">
-            <div class="row">
-               <div class="title text-center">
-                  <h1>Skills</h1>
-               </div>
-            </div>
-            <div class="row">
-               <div class="service-content">
-                  <div class="box">
-                     <div class="icon"><i class="fas fa-car-battery"></i></div>
-                     <h5>Software</h5>
-                     <p>
-                     </p>
-                  </div>
-                  <div class="box">
-                     <div class="icon"><i class="fa fa-code"></i></div>
-                     <h5>Web Development</h5>
-                     <p>
-                     </p>
-                  </div>
-                  <div class="box">
-                     <div class="icon"><i class="fa fa-power-off"></i></div>
-                     <h5>Machine Learning</h5>
-                     <p>
-                     </p>
-                  </div>
-                  <div class="box">
-                     <div class="icon"><i class="fas fa-wallet"></i></div>
-                     <h5>Problem-Solving</h5>
-                     <p>
-                     </p>
-                  </div>
-                  <div class="box">
-                     <div class="icon"><i class="fa fa-mobile"></i></div>
-                     <h5>Time Management </h5>
-                     <p>
-                     </p>
-                  </div>
-                  <div class="box">
-                     <div class="icon"><i class="fa fa-microchip"></i></div>
-                     <h5>Hardware</h5>
-                      <p> Using an FPGA and Intel Quartus Prime programmable logic design software,
-                        designed 16-bit RISC CPU from scratch, able to carry out over 20 instructions.
-                        Built and integrated Program Counter, Control Unit, Register File, 
-                        ALU, ROM, and RAM into single, functional Datapath using Verilog.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-         <div class="container">
-            <div class="row">
-               <div class="title text-center">
-                  <h1>My Face Cards</h1>
-               </div>
-            </div>
-            <div class="row">
-               <div class="filter-btn">
-                  <ul id="filterBtn">
-                     <li class="active" data-target="all">All</li>
-                     <li data-target="web">Web Design</li>
-                     <li data-target="app">App Interface</li>
-                     <li data-target="ui">UI/UX</li>
-                  </ul>
-               </div>
-            </div>
-            <div class="row">
-               <div class="gallery">
-                  <div class="item" data-id="web">
-                     <div class="inner">
-                        <img src="./img/portfolio/auston.jpg" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>Auston</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item" data-id="web">
-                     <div class="inner">
-                        <img src="./img/portfolio/carlie.jpg" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>Carlie</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item" data-id="app">
-                     <div class="inner">
-                        <img src="./img/portfolio/hailey.jpg" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>Hailey</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item" data-id="app">
-                     <div class="inner">
-                        <img src="./img/portfolio/app2.png" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>App Interface</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item" data-id="ui">
-                     <div class="inner">
-                        <img src="./img/portfolio/ui2.png" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>UI/UX Design</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="item" data-id="ui">
-                     <div class="inner">
-                        <img src="./img/portfolio/ui3.png" alt="portfolio"/>
-                        <div class="overlay">
-                           <span class="fa fa-plus"></span>
-                           <h4>UI/UX Design</h4>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+
+ <!-- MOTIVATION SECTION -->
+
       <section class="testimonials">
          <div class="container">
             <div class="row">
@@ -266,7 +143,7 @@
                   <div class="testimonials-box">
                      <div class="testimonials-img">
                         <div class="test-img">
-                           <img src="./img/testimonials/sagan.jpg" />
+                           <img src="img/sagan.jpg" />
                         </div>
                         <div class="testimonials-text">
                            <p>“There are naive questions, tedious questions, ill-phrased 
@@ -279,7 +156,7 @@
                      </div>
                      <div class="testimonials-img">
                         <div class="test-img">
-                           <img src="./img/testimonials/mlk.jpg" />
+                           <img src="img/mlk.jpg" />
                         </div>
                         <div class="testimonials-text">
                            <p>"The ultimate measure of a man is not where he stands in 
@@ -291,7 +168,7 @@
                      </div>
                      <div class="testimonials-img">
                         <div class="test-img">
-                           <img src="./img/testimonials/paine1.jpg" />
+                           <img src="img/paine1.jpg" />
                         </div>
                         <div class="testimonials-text">
                            <p>“What we obtain too cheap, we esteem too lightly; 
@@ -302,12 +179,32 @@
                      </div>
                      <div class="testimonials-img">
                         <div class="test-img">
-                           <img src="./img/testimonials/keller.jpg" />
+                           <img src="img/keller.jpg" />
                         </div>
                         <div class="testimonials-text">
                            <p>“One painful duty fulfilled makes the next plainer and easier.”</p>
                            <h6>Helen Keller</h6>
                            <p1>Story of My Life, 1903</p1>
+                        </div>
+                     </div>
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="img/franklin.jpg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>“Well done is better than well said.”</p>
+                           <h6>Benjamin Franklin</h6>
+                           <p1>Poor Richard's Almanack, 1737</p1>
+                        </div>
+                     </div>
+                     <div class="testimonials-img">
+                        <div class="test-img">
+                           <img src="img/twain.jpg" />
+                        </div>
+                        <div class="testimonials-text">
+                           <p>“Make it a point to do something every day that you don't want to do. This is the golden rule for acquiring the habit of doing your duty without pain.”</p>
+                           <h6>Mark Twain</h6>
+                           <p1>Following the Equator, 1897</p1>
                         </div>
                      </div>
                   </div>
@@ -316,6 +213,9 @@
             </div>
          </div>
       </section>
+
+ <!-- WHAT I'M WATHCING SECTION -->
+
       <section class="blog" id="blog">
          <div class="container">
             <div class="row">
@@ -327,7 +227,7 @@
                <div class="blog-content">
                   <div class="blog-box">
                      <div class="blog-img">
-                        <img src='./img/blogs/1.jpg' />
+                        <img src='img/1.jpg' />
                      </div>
                      <div class="blog-text">
                         <div class="blog-info">
@@ -346,7 +246,7 @@
                   </div>
                   <div class="blog-box">
                      <div class="blog-img">
-                        <img src='./img/blogs/2.png' />
+                        <img src='img/2.png' />
                      </div>
                      <div class="blog-text">
                         <div class="blog-info">
@@ -365,7 +265,7 @@
                   </div>
                   <div class="blog-box">
                      <div class="blog-img">
-                        <img src='./img/blogs/3.jpg' />
+                        <img src='img/3.jpg' />
                      </div>
                      <div class="blog-text">
                         <div class="blog-info">
@@ -387,6 +287,9 @@
             </div>
          </div>
       </section>
+
+ <!-- CONTACT SECTION -->
+
       <section class="contact" id="contact">
          <div class="container">
             <div class="row">
@@ -402,28 +305,34 @@
                         <p>Lay it on me.</p>
                      </div>
                   </div>
-                  <div class="row space-between">
-                     <div class="col-6">
-                        <input type="text" class="form-control" name="" placeholder="Name" />
+                  <form action="https://formsubmit.co/whittenoswald@gmail.com" method="POST">
+                     <input type="hidden" name="_subject" value="Email from website!!">
+                     <div class="row space-between">
+                        <div class="col-6">
+                           <input type="text" class="form-control" name="name" placeholder="Name" required/>
+                        </div>
+                        <div class="col-6">
+                           <input type="email" class="form-control" name="email" placeholder="Email Address" required/>
+                        </div>
                      </div>
-                     <div class="col-6">
-                        <input type="text" class="form-control" name="" placeholder="Email" />
+                     <div class="row">
+                        <div class="col-12">
+                           <textarea class="form-control" name="content" placeholder="Your Message"></textarea>
+                        </div>
                      </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-12">
-                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                     <div class="row">
+                        <div class="button btn">
+                           <button class="sender" href= "" type="submit">SEND</button>
+                        </div>
                      </div>
-                  </div>
-                  <div class="row">
-                     <div class="button btn">
-                        <a href="#">Send</a>
-                     </div>
-                  </div>
+                  </form>
                </div>
             </div>
          </div>
       </section>
+
+ <!-- FOOTER SECTION -->
+
       <footer>
          <div class="container">
             <div class="row">
@@ -441,11 +350,7 @@
             <p>© <span id="year"></span> | Whitten Oswald | All rights reserved.</p>
          </div>
       </section>
-      <div class="lightbox hide">
-         <span class="close-lightbox fa fa-close"></span>
-         <img src="" alt="portfolio"/>
-      </div>
-      <script src="./js/app.js"></script>
+      <script src="./js/homepage.js"></script>
    </body>
 </html>
 

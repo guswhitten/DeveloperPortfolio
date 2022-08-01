@@ -87,12 +87,20 @@
   max-width: 100%;
 }
 
-.contact-form .btn a {
+.contact-form .btn .sender {
   background-color: #5f88e0;
   float: right;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  height: 45px;
+  width: 85px;
 }
 
-.contact-form .btn a:hover {
+.contact-form .btn .sender:hover {
   color: #fff;
   background-color: #01143e;
 }

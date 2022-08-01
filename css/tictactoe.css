@@ -15,10 +15,12 @@
   width: 100%;
 }
 
-.btn {
+.btnStartGame {
   font-size: 24px;
   background-color: rgb(50, 205, 205);
   border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 td {
@@ -88,6 +90,7 @@ table tr td:last-child {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 50px;
   width: 70px;
+  cursor: pointer;
 }
 
 .selectSym button:first-of-type {

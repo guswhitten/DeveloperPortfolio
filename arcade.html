@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/gamepad.png">
+    <title>Whitten Oswald | Arcade</title>
+    <link href="./css/header.css" rel="stylesheet" />
+      <link href="./css/main.css" rel="stylesheet" />
+      <link href="./css/home.css" rel="stylesheet" />
+      <link href="./css/contact.css" rel="stylesheet" />
+      <link href="./css/tictactoe.css" rel="stylesheet" />
+      <link href="./css/footer.css" rel="stylesheet" />
+      <link href="./css/chess.css" rel="stylesheet" />
+      <link href="./css/rps.css" rel="stylesheet" />
+      <link href="./css/breakout.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="brand-name">
+            <a href="img/Whitten_Oswald_856_739_6005_.pdf" target="_blank" class="fa-light"
+              ><i class="fas fa-file-pdf-o"></i> Resumé
+            </a>
+          </div>
+          <div class="hamburger">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="arcade.html" class="active">Arcade</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+ <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row full-screen">
+          <div class="home-content">
+            <div class="blocky">
+              <h1> <span><i class="fa fa-gamepad"></i></span> Arcade </h1>
+              <p>Occasionally under construction. Thank you for your patience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- TIC TAC TOE SECTION -->
+
+    <section class="tictactoe" id="tictactoe">
+      <div class="container">
+      <div class="row">
+         <div class="title text-center">
+            <h1>Tic Tac Toe</h1>
+            <p>Play against the computer.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="tictac-game">
+            <div class="row">
+               <div class="img">
+                <table>
+                  <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                  </tr>
+                  <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                  </tr>
+                  <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                  </tr>
+                </table>
+                <div class="endgame">
+                  <div class="text">
+                  </div>
+                </div>
+                <div class="selectSym">
+                  <p>Choose:</p>
+                  <button onClick="selectSym('X')">X</button>
+                  <button onClick="selectSym('O')">O</button>
+                </div>
+                <button class="btnStartGame" onClick="startGame()">Play Again</button>
+                
+                <script src="./js/tictactoe.js"></script>
+               </div>
+               <div class="info">
+                <p>The computer algorithm you play against here is based on the Minimax algorithm described in more detail here:
+                  <span><a href="https://en.wikipedia.org/wiki/Minimax" target="_blank">Wikipedia.org: Minimax</a></span>
+                </p>
+                <p></p>
+              </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ROCK PAPER SCISSORS -->
+
+<section class="rps" id="rps">
+   <div class="row">
+      <div class="title text-center">
+         <h1>Rock, Paper, Scissors</h1>
+      </div>
+   </div>
+   <div class="rps-game">
+      <h2 class="rpsText2">You: <span id="user-choice"></span></h1>
+      <button class="rpsButtons" id="rock">Rock <i class="fa fa-hand-rock"></i></button>
+      <button class="rpsButtons" id="paper">Paper <i class="fa fa-hand-paper"></i></button>
+      <button class="rpsButtons" id="scissors">Scissors <i class="fa fa-hand-scissors"></i></button>
+      <h2 class="rpsText1">Opponent: <span id="computer-choice"></span></h1>
+      <h1 class="gameResults"><span id="result"></span></h1>
+   </div>
+<script src="./js/rps.js"></script>
+</section>
+
+<!-- BREAKOUT -->
+
+<section class="breakout" id="breakout">
+   <div class="row">
+      <div class="title text-center">
+         <h1>Breakout</h1>
+         <p>(still in development)</p>
+      </div>
+      <h1 id="score">0</h1>
+         <div class="grid">
+         </div>    
+   </div>
+   <button class="startBreakout" onClick="startBreakout()">Start Game</button>
+            
+<script src="./js/breakout1.js"></script>
+</section>
+
+ <!-- CONTACT SECTION -->
+
+   <section class="contact" id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="title text-center">
+               <h1>Contact</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="contact-form">
+               <div class="row">
+                  <div class="contact-text">
+                     <h2>Question, comment, criticism?</h2>
+                     <p>Lay it on me.</p>
+                  </div>
+               </div>
+               <form action="https://formsubmit.co/whittenoswald@gmail.com" method="POST">
+                  <input type="hidden" name="_subject" value="Email from website!!">
+                  <div class="row space-between">
+                     <div class="col-6">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required/>
+                     </div>
+                     <div class="col-6">
+                        <input type="email" class="form-control" name="email" placeholder="Email Address" required/>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <textarea class="form-control" name="content" placeholder="Your Message"></textarea>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="button btn">
+                        <button class="sender" href= "" type="submit">SEND</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+ <!-- FOOTER SECTION -->
+
+ <footer>
+    <div class="container">
+       <div class="row">
+          <div class="footer-logo">Whitten Oswald</div>
+          <div class="social-link">
+             <a href="https://www.youtube.com/channel/UCK3bLIMxwYbCrhLdSqwk1fg"><i class="fa fa-youtube"></i></a>
+             <a href="https://github.com/guswhitten/"><i class="fa fa-github"></i></a>
+             <a href="https://www.linkedin.com/in/whitten-oswald-041077145/"><i class="fa fa-linkedin"></i></a>
+          </div>
+       </div>
+    </div>
+ </footer>
+ <section class="copyright">
+    <div class="container">
+       <p>© <span id="year"></span> | Whitten Oswald | All rights reserved.</p>
+    </div>
+ </section>
+ <script src="./js/arcadePage.js"></script>
+  </body>
+</html>

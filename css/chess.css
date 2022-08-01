@@ -1,0 +1,87 @@
+/* .chess {
+  padding: 100px 15px;
+  background-color: gray;
+}
+
+.chess .row .title h1::before {
+  left: 30%;
+}
+
+.chess .chess-game {
+  position: relative;
+  left: 120px;
+  text-align: center;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.restartGame {
+  font-size: 24px;
+  background-color: rgb(50, 205, 205);
+  border-radius: 5px;
+}
+
+.cell1 {
+  border: 1px solid #333;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chessBoard {
+  background-color: burlywood;
+  border-collapse: collapse;
+}
+
+.endOfgame {
+  display: none;
+  width: 200px;
+  top: 120px;
+  background-color: white;
+  position: center;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.selectPiece {
+  display: none;
+  position: relative;
+  width: 300px;
+  bottom: 49%;
+  left: 27%;
+  right: 25%;
+  background-color: gray;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.selectPiece p {
+  font-weight: bold;
+}
+
+.selectPiece button {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 50px;
+  width: 70px;
+  background-color: rgb(50, 205, 205);
+  cursor: pointer;
+}
+
+.selectPiece button:first-of-type {
+  margin-right: 10px;
+}
+.selectPiece button:last-of-type {
+  margin-left: 10px;
+}
+
+.info {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 80px;
+} */

@@ -1,0 +1,38 @@
+.breakout {
+  background-color: rgba(255, 255, 0, 0.445);
+  height: 800px;
+  width: auto;
+}
+
+.grid {
+  position: relative;
+  width: 560px;
+  height: 300px;
+  border: solid 1px black;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.bUser {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blueviolet;
+  border-radius: 4px;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: black;
+}
